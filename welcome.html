@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafisa's Personal Blog</title>
+    <style>
+        body {
+            font-family: 'didot';
+            background-color: #DDF2FD;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            max-width: 600px;
+            border-radius: 15px;
+            text-align: center;
+            padding: 20px;
+            background-color: #9BBEC8;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #192655;
+        }
+
+        h2 {
+            color: #072541;
+        }
+
+        p {
+            color: #072541;
+        }
+
+        a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #164863;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #031e2c;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Praktikum Alpro Week 10</h1>
+        <hr>
+        <h2>Hello!</h2>
+        <p>Let's Explore Nafisa's Catalogue</p>
+        <p>
+            <a href="{{ url_for('CV') }}">CV</a>
+            <a href="{{ url_for('form') }}">Form Data Mahasiswa</a>
+            <a href="{{ url_for('biodata') }}">Biodata</a>
+            <a href="{{ url_for('fibonacci') }}">Bilangan Fibonacci</a>
+            <a href="{{ url_for('portofolio') }}">Portfolio</a>
+            <a href="{{ url_for('csv_to_json') }}">Convert CSV to JSON</a>
+            <a href="{{ url_for('movie') }}">Movie List</a>
+            <a href="{{ url_for('music') }}">Music Playlist</a>
+        </p>
+    </div>
+</body>
+</html>

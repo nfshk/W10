@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafisahika Profile</title>
+    <style>
+        body {
+            font-family: Verdana;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #394660;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-picture img {
+            max-width: 40%; 
+            height: auto;
+            border-radius: 45%;
+            display: block;
+            margin-bottom: 20px;
+            margin: 0 auto;
+        }
+
+        .profile-name {
+            font-size: 20px, 10px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 0.75;
+            color: #394660;
+        }
+
+        .profile-study {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            color: #394660;
+        }
+
+        .profile-info {
+            margin-top: 10px;
+        }
+
+        .profile-info a {
+            text-decoration: none;
+            color: #6c8cad;
+        }
+
+        .profile-hobbies {
+            margin-top: 20px;
+            line-height: 1;
+        }
+
+        .profile-hobbies ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .profile-hobbies li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello Everyone!</h1>
+    </header>
+    <div class="container">
+        <div class="profile-picture">
+          <img src="{{ url_for('static', filename='foto_biodata.jpg') }}" alt="Nafisahika Putri Herra">
+        </div>
+        <div class="profile-name">
+            <h1>Nafisahika Putri Herra</h1>
+            <p>Data Science Technology Undergraduate Student</p>
+            <p>Airlangga University</p>
+        </div>
+        <div class="profile-info">
+            <p><strong>Place, Date of Birth:</strong> Banyumas, July 10, 2004</p>
+            <p><strong>Address:</strong>Jl. Mulyorejo Tengah No. 86 Belakang, Mulyorejo, Surabaya</p>
+            <p><strong>Phone Number/WhatsApp:</strong>089634206177</p>
+            <p><strong>Email:</strong>nafisahikaputriherra@gmail.com</p>
+        </div>
+        <div class="profile-hobbies">
+            <h4>My Hobbies:</h4>
+            <ul>
+                <li>1. Watching Action Comedy Movies</li>
+                <li>2. Listening to Music and Singing</li>
+                <li>3. Culinary</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

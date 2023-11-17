@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artis & Lagu Favorit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #A9A9A9;
+            color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a1a1a;
+        }
+
+        .artist-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .artist {
+            text-align: center;
+            width: 200px;
+            margin: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .artist:nth-child(odd) {
+            background-color: #ffcccb; 
+        }
+
+        .artist:nth-child(even) {
+            background-color: #afeeee; 
+        }
+
+        .artist img {
+            width: 100%;
+            border-radius: 30%;
+            object-fit: cover;
+        }
+
+        .song-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Artis dan Lagu Favorit</h1>
+        <h2>Nafisahika Putri Herra</h2>
+    </header>
+   
+
+    <div class="artist-container">
+        <div class="artist">
+            <img src="{{ url_for('static', filename='tulus.jpeg') }}" alt="Artis 1">
+            <h2>Tulus</h2>
+            <ul class="song-list">
+                <li>Album Manusia</li>
+                <li>Album Monokrom</li>
+                <li>Album Tulus</li>
+                <li>Album Gajah</li>
+                <li>Semua karya Tulus aku suka <3</li>
+            </ul>
+        </div>
+
+        <div class="artist">
+            <img src="{{ url_for('static', filename='taylor.jpg') }}" alt="Artis 2">
+            <h2>Taylor Swift</h2>
+            <ul class="song-list">
+                <li>Enchanted</li>
+                <li>Cruel Summer</li>
+                <li>Love Story</li>
+                <li>You Belong With Me</li>
+                <li>Shake it Off</li>
+                <li>Style</li>
+                <li>Back to December</li>
+                <li>Gorgeous</li>
+                <li>august</li>
+            </ul>
+        </div>
+
+        <div class="artist">
+            <img src="{{ url_for('static', filename='olivia.jpeg') }}" alt="Artis 3">
+            <h2>Olivia Rodrigo</h2>
+            <ul class="song-list">
+                <li>Happier</li>
+                <li>Drivers License</li>
+                <li>All I Want</li>
+                <li>Good 4 U</li>
+                <li>Deja Vu</li>
+                <li>Vampire</li>
+                <li>Favorite Crime</li>
+                <li>Tampar</li>
+            </ul>
+        </div>
+
+        <div class="artist">
+            <img src="{{ url_for('static', filename='juicy.jpeg') }}" alt="Artis 4">
+            <h2>Juicy Luicy</h2>
+            <ul class="song-list">
+                <li>Terlalu Tinggi</li>
+                <li>Tampar</li>
+                <li>Mawar Jingga</li>
+                <li>Lantas</li>
+                <li>Tak Di Tanganku</li>
+                <li>Di Balik Layar</li>
+                <li>Jemari</li>
+                <li>Kembali Kesepian</li>
+                <li>Sayangnya</li>
+                <li>Tanggung Jawab</li>
+                <li>Kembali Kesepian</li>
+                <li>Tak Terbaca</li>
+                <li>Lagu Nikah</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
